@@ -12,7 +12,8 @@ const Home:React.FC = () => {
 }
 
 const Wrapper = styled.div`
-  height: 100%;
+background-color: red;
+  height: 100px;
   width: 100%;
 `
 export default Home
