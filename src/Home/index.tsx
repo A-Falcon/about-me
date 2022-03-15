@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import NavBar from '../../components/NavBar'
+import NavBar from '../components/NavBar'
 
 const Home:React.FC = () => {
   return (
@@ -12,8 +12,8 @@ const Home:React.FC = () => {
 }
 
 const Wrapper = styled.div`
-background-color: red;
-  height: 100px;
+  background-color: red;
+  height: 100%;
   width: 100%;
 `
 export default Home

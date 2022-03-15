@@ -4,27 +4,27 @@ import styled from 'styled-components'
 const NavBar:React.FC = () => {
   return (
     <Wrapper>
-      <Nav>
         <NavItem>Plants</NavItem>
         <NavItem>Fashion</NavItem>
         <NavItem>Games</NavItem>
         <NavItem>Interior Design</NavItem>
-      </Nav>
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div`
-flex-direction: row;
-justify-content: space-around;
-width: 100%;
-background-color: blue;
+const Wrapper = styled.ul`
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  width: 100%;
+  height: 80px;
+  background-color: green;
 `
 const NavItem = styled.li`
-font-size: 40px;
+  list-style-type: none;
+  font-size: 40px;  
 `
-const Nav = styled.ul`
 
-`
 
 export default NavBar
