@@ -25,8 +25,14 @@ const Item = styled.h1`
   color: black;
   text-align: center;
   list-style-type: none;
-  font-size: 30px;  
-  font-family: monospace;
+  font-size: 20px;  
+  text-transform: uppercase;
+  font-family: 'Chango', cursive;
+  transform: scale(1,1);
+  -webkit-transform: scale(1,1); /* Safari and Chrome */
+  -moz-transform: scale(1,1); /* Firefox */
+  -ms-transform: scale(1,1); /* IE3+ */
+  -o-transform: scale(1, 1); /* Opera */
 `
 
 
