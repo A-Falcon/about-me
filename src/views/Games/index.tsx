@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Heading from '../../components/Heading'
+
 const Games: React.FC = () => {
   return (
-    <Wrapper id='games'>
-    </Wrapper>
+      <Wrapper>
+         <Heading id='games' label={'GAMES'}/>
+      </Wrapper>
   )
 }
 

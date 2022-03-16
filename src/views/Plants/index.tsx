@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Heading from '../../components/Heading'
+
 const Plants: React.FC = () => {
   return (
-    <Wrapper id='plants'>
+    <Wrapper>
+      <Heading id='plants' label={'PLANTS'}/>
     </Wrapper>
   )
 }

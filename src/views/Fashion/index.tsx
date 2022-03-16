@@ -1,24 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface FashionViewProps {
-
-}
+import Heading from '../../components/Heading'
 
 const FashionView: React.FC = () => {
   return (
-    <Wrapper id='fashion'>
-
+    <Wrapper>
+      <Heading label={'FASHION'} id='fashion'/>
     </Wrapper>
   )
 }
 
 
 const Wrapper = styled.div`
-  background-color: aquamarine;
-  height: 100vh;
+  background-color: ${(props) => props.theme.colors.mid};
+  height: 150vh;
   width: 100%;
-  margin-top: 100vh;
+  padding-top: 200px;
+  /* margin-top: 100vh; */
 `
 
 export default FashionView

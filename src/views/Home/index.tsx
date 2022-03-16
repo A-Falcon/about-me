@@ -3,20 +3,27 @@ import styled from 'styled-components'
 
 const HomeView: React.FC = () => {
   return (
-    <Wrapper id='home'>
+    <>
+    <HomeLink id='home'></HomeLink>
+    <Wrapper>
       <HeroText>AHTZIRI</HeroText>
     </Wrapper>
+    </>
   )
 }
 
+const HomeLink = styled.div`
+  width: 100%;
+  height: 1px;
+`
 
 const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  padding-top: 40px;
-  background-color:red;
+  margin-top: 1vh;
+  background-color: ${(props) => props.theme.colors.light};
   position:fixed;
   top:0;
   left:0;
@@ -25,10 +32,11 @@ const Wrapper = styled.div`
 `
 
 const HeroText = styled.h1`
+  color: ${(props) => props.theme.colors.text};
   text-align: center;
-  font-size: 175px;
+  font-size: ${(props) => props.theme.font.fontSize * 10}px; 
   text-transform: uppercase;
-  font-family: 'Chango', cursive;
+  font-family: ${(props) => props.theme.font.fontFam};
   transform: scale(1,3);
   -webkit-transform: scale(1,3); /* Safari and Chrome */
   -moz-transform: scale(1,3); /* Firefox */
