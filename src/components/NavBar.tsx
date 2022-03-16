@@ -1,18 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import NavItem from '../components/NavItem'
+
 const NavBar:React.FC = () => {
   return (
     <Wrapper>
-        <NavItem>Plants</NavItem>
-        <NavItem>Fashion</NavItem>
-        <NavItem>Games</NavItem>
-        <NavItem>Interior Design</NavItem>
+      <NavItem label={'Fashion'}/>
+      <NavItem label={'Games'}/>
+      <NavItem label={'Home'}/>
+      <NavItem label={'Interior Design'}/> 
     </Wrapper>
   )
 }
 
-const Wrapper = styled.ul`
+const Wrapper = styled.div`
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -20,10 +22,8 @@ const Wrapper = styled.ul`
   width: 100%;
   height: 80px;
   background-color: green;
-`
-const NavItem = styled.li`
-  list-style-type: none;
-  font-size: 40px;  
+  padding: 0px;
+  margin-top: 0px;
 `
 
 
