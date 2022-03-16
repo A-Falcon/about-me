@@ -16,8 +16,8 @@ const NavBar:React.FC = () => {
 }
 
 const Wrapper = styled.div`
-  position: fixed;
-  top: 0;
+position: fixed;
+top: 0;
   display:flex;
   flex-direction: row;
   justify-content: center;
@@ -25,8 +25,6 @@ const Wrapper = styled.div`
   width: 100%;
   height: 80px;
   background-color: green;
-  padding: 0px;
-  margin-top: 0px;
 `
 
 
