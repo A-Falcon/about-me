@@ -5,19 +5,22 @@ import NavItem from '../components/NavItem'
 
 const NavBar:React.FC = () => {
   return (
-    <Wrapper>
-      <NavItem label={'Fashion'}/>
-      <NavItem label={'Games'}/>
-      <NavItem label={'Home'}/>
-      <NavItem label={'Interior Design'}/> 
+    <Wrapper>  
+      <NavItem to={'#home'} label={'Home'}/>
+      <NavItem to={'#fashion'} label={'Fashion'}/>
+      <NavItem to={'#games'} label={'Games'}/>
+      <NavItem to={'#plants'} label={'Plants'} />
+      <NavItem to={'#interior-design'} label={'Int/Design'}/> 
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
+  position: fixed;
+  top: 0;
   display:flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items:center;
   width: 100%;
   height: 80px;
