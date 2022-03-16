@@ -1,13 +1,14 @@
 const theme = {
   colors: {
-    boldText: '#FCA311',
-    normalText: '#B3B3B3',
+    text: '#242424',
 
-    light: '#404040',
-    dark: '#262626',
+    light: '#f5ebe0',
+    mid: '#e3d5ca',
+    dark: '#d6ccc2',
   },
 
   font: {
+    fontFam: 'Chango',
     fontSize: 22,
     fontWeight: 700
   }

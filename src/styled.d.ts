@@ -4,15 +4,16 @@ import 'styled-components/native'
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      boldText: string
-      normalText: string
+      text: string
 
       light: string
+      mid: string
       dark: string
     
     }
 
     font: {
+      fontFam: string
       fontSize: number
       fontWeight: number
     }
