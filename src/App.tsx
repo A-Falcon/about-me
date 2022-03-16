@@ -6,11 +6,14 @@ import './App.css';
 
 import NavBar from './components/NavBar';
 import Home from '../src/views/Home'
+import Portrait from '../src/views/Portrait'
 import Fashion from '../src/views/Fashion'
 import Games from '../src/views/Games'
 import Plants from '../src/views/Plants'
 import InteriorDesign from '../src/views/InteriorDesign'
 import theme from './theme';
+
+
 
 function App() {
   
@@ -20,6 +23,7 @@ function App() {
       <Wrapper className="App">
         <NavBar />
         <Home />
+        <Portrait />
         <Fashion />
         <Games />
         <Plants />
