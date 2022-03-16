@@ -22,12 +22,12 @@ const Wrapper = styled.div`
   flex: 1;
 `
 const Item = styled.h1`
-  color: black;
+  color: ${(props) => props.theme.colors.text};
   text-align: center;
   list-style-type: none;
-  font-size: 20px;  
+  font-size: ${(props) => props.theme.font.fontSize}px; 
   text-transform: uppercase;
-  font-family: 'Chango', cursive;
+  font-family: ${(props) => props.theme.font.fontFam};
   transform: scale(1,1);
   -webkit-transform: scale(1,1); /* Safari and Chrome */
   -moz-transform: scale(1,1); /* Firefox */
