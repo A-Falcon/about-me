@@ -7,10 +7,11 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from '../src/views/Home'
 import Portrait from '../src/views/Portrait'
-import Fashion from '../src/views/Fashion'
+import Thrifting from './views/Thrifting'
 import Games from '../src/views/Games'
 import Plants from '../src/views/Plants'
 import InteriorDesign from '../src/views/InteriorDesign'
+import Hiking from '../src/views/Hiking'
 import theme from './theme';
 
 
@@ -24,10 +25,11 @@ function App() {
         <NavBar />
         <Home />
         <Portrait />
-        <Fashion />
+        <Thrifting />
         <Games />
         <Plants />
         <InteriorDesign />
+        <Hiking />
       </Wrapper>
     </BrowserRouter>
     </ThemeProvider>

@@ -7,10 +7,11 @@ const NavBar:React.FC = () => {
   return (
     <Wrapper>  
       <NavItem to={'#home'} label={'Home'}/>
-      <NavItem to={'#fashion'} label={'Fashion'}/>
+      <NavItem to={'#thrifting'} label={'Thrifting'}/>
       <NavItem to={'#games'} label={'Games'}/>
       <NavItem to={'#plants'} label={'Plants'} />
       <NavItem to={'#interior-design'} label={'Int/Design'}/> 
+      <NavItem  to={'#hiking'} label={'Hiking'} />
     </Wrapper>
   )
 }
