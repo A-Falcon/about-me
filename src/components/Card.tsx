@@ -18,6 +18,10 @@ const Wrapper = styled.div`
   border-radius: 10%;
   background-color: ${(props) => props.theme.colors.dark};
   box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);
+  transition: all .5s ease-in-out; 
+  &:hover {
+    transform: scale(1.02); 
+  }
 `
 
 export default Card
