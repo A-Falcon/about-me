@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 import Heading from '../../components/Heading'
 
-const FashionView: React.FC = () => {
+const ThriftingView: React.FC = () => {
   return (
     <Wrapper>
-      <Heading label={'FASHION'} id='fashion'/>
+      <Heading label={'THRIFTING'} id='thrifting'/>
     </Wrapper>
   )
 }
@@ -20,4 +20,4 @@ const Wrapper = styled.div`
   /* margin-top: 100vh; */
 `
 
-export default FashionView
+export default ThriftingView
