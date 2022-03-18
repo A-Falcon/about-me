@@ -13,7 +13,7 @@ const HikingView: React.FC = () => {
 
 
 const Wrapper = styled.div`
-  background-color: whitesmoke;
+  background-color: ${(props) => props.theme.colors.mid};
   height: 100vh;
   width: 100%;
 `

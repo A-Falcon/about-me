@@ -13,7 +13,7 @@ const Games: React.FC = () => {
 
 
 const Wrapper = styled.div`
-  background-color: blue;
+  background-color: ${(props) => props.theme.colors.mid};
   height: 100vh;
   width: 100%;
 

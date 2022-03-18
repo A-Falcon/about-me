@@ -13,7 +13,7 @@ const Plants: React.FC = () => {
 
 
 const Wrapper = styled.div`
-  background-color: papayawhip;
+  background-color: ${(props) => props.theme.colors.mid};
   height: 100vh;
   width: 100%;
 `
