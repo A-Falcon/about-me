@@ -5,15 +5,21 @@ import Heading from '../../components/Heading'
 import Card from '../../components/Card'
 import { device } from '../../data/device'
 import Animation from '../../components/Animation'
+import ImgSlider from '../../components/ImgSlider'
 
 const ThriftingView: React.FC = () => {
- 
+  
+
 
   return (
     <Wrapper>
       <Heading label={'THRIFTING'} id='thrifting'/>
       <Content>
-          <Animation />
+        { !device.xs 
+        ? <Animation /> 
+        : <ImgSlider /> 
+        }  
+          
       </Content>
     </Wrapper>
   )
