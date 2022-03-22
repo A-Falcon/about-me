@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import NavItem from '../components/NavItem'
-
+import {device} from '../data/device'
 const NavBar:React.FC = () => {
   return (
     <Wrapper>  
@@ -21,11 +21,14 @@ const Wrapper = styled.div`
   top: 0;
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items:center;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: ${(props) => props.theme.colors.light};
+  flex-wrap: wrap;
+  z-index: 1;
+
 `
 
 

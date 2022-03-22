@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {device} from '../../data/device'
+
 const HomeView: React.FC = () => {
   return (
     <>
@@ -29,6 +31,10 @@ const Wrapper = styled.div`
   left:0;
    /* prevents your fixed panel from being on top of your subsequent panels */
   z-index: -1; 
+
+  @media ${device.xs} {
+    margin-top: 50px;
+  }
 `
 
 const HeroText = styled.h1`
@@ -42,6 +48,10 @@ const HeroText = styled.h1`
   -moz-transform: scale(1,3); /* Firefox */
   -ms-transform: scale(1,3); /* IE3+ */
   -o-transform: scale(1, 3); /* Opera */
+
+  @media ${device.xs} {
+    font-size: ${(props) => props.theme.font.fontSize * 2.5}px; 
+  }
 `
 
 export default HomeView

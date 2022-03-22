@@ -6,7 +6,7 @@ import Heading from '../../components/Heading'
 const InteriorDesign: React.FC = () => {
   return (
     <Wrapper>
-      <Heading id='interior-design'label={'INTERIOR - DESIGN'}/>
+      <Heading id='interior-design'label={'INTERIOR-DESIGN'}/>
       <Content>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
         {/* <Carasoul></Carasoul> */}
