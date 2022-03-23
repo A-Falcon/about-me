@@ -10,7 +10,7 @@ const HikingView: React.FC = () => {
     <Wrapper>
       <Heading id='hiking' label={'HIKING'} />
       <Content>
-        <Card style={{height: "60%", width: '90%'}}/>
+        <Card img={require('../../assets/car-pic.png')} style={{}}/>
       </Content>
       
     </Wrapper>

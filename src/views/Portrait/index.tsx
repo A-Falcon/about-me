@@ -7,7 +7,7 @@ import Card from '../../components/Card'
 const PortraitView: React.FC = () => {
   return (
     <Wrapper>
-      <Card />
+      <Card img={require('../../assets/car-pic.png')}/>
     </Wrapper>
   )
 }
@@ -21,12 +21,12 @@ const Wrapper = styled.div`
   height: 100vh;
   width: auto;
   background-color: transparent;
-  margin-top: 45vh;
+  margin-top: 20vh;
   margin-bottom: -175px;
   
   @media ${device.xs} {
     height: 40vh;
-    margin-top: 17vh;
+    margin-top: 25vh;
     margin-bottom: -75px;
   }
 `

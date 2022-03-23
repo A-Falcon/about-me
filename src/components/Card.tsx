@@ -5,19 +5,20 @@ import { device } from '../data/device'
 interface CardProps {
   // img: any
   style?: any
-
+  img?: any
 }
-const Card: React.FC<CardProps>= ({style}) => {
+const Card: React.FC<CardProps>= ({style, img}) => {
   return (
-    <Wrapper style={style}>
+    <Wrapper  src={img} style={style}>
     </Wrapper>
   )
 }
 
 
-const Wrapper = styled.div`
-  height:80%;
-  width: 60%;
+const Wrapper = styled.img`
+  object-fit: cover;
+  height: 85%;
+  width:  45%;
   border-radius: 10%;
   background-color: ${(props) => props.theme.colors.dark};
   box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);
@@ -26,8 +27,8 @@ const Wrapper = styled.div`
     transform: scale(1.02); 
   }
   @media ${device.xs} {
-    /* height:22.5rem;
-    width: 20rem; */
+    height:22.5rem;
+    width: 20rem;
   }
 `
 
