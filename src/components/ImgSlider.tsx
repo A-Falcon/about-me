@@ -35,19 +35,19 @@ const ImgSlider: React.FC = () => {
 
 const ChevLeft = styled(FiChevronLeft)`
   font-size: 60px;
-  
+  width: 10%;
 `
 const ChevRight = styled(FiChevronRight)`
-font-size: 60px;
-
+  font-size: 60px;
+  width: 10%;
 `
-
 const Wrapper = styled.div`
   position: relative;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: row;
   align-items: center;
+  
 `
 const Container = styled.div`
 flex-direction: column;
@@ -64,8 +64,8 @@ const ImgCont = styled.div`
 `
 
 const Img = styled.img`
-  
-  width: 200px;
+
+  width: 300px;
   border-radius: 10%;
   background-color: ${(props) => props.theme.colors.dark};
   box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);

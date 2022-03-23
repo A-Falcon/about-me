@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 
 import Heading from '../../components/Heading'
@@ -6,18 +6,18 @@ import Card from '../../components/Card'
 import { device } from '../../data/device'
 import Animation from '../../components/Animation'
 import ImgSlider from '../../components/ImgSlider'
+import { SizeContext } from '../../App'
+
 
 const ThriftingView: React.FC = () => {
-  
-
-
+  const screenType = useContext(SizeContext)
   return (
     <Wrapper>
       <Heading label={'THRIFTING'} id='thrifting'/>
-      <Content>
-        { !device.xs 
-        ? <Animation /> 
-        : <ImgSlider /> 
+      <Content style={ device.xs ? {flexDirection: 'column'} : {flexDirection: 'row'}}>
+        { screenType === 'xs'
+        ? <ImgSlider /> 
+        : <Animation /> 
         }  
           
       </Content>
