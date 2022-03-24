@@ -10,9 +10,9 @@ import Portrait from '../src/views/Portrait'
 import Thrifting from './views/Thrifting'
 import Games from '../src/views/Games'
 import Plants from '../src/views/Plants'
-import InteriorDesign from '../src/views/InteriorDesign'
 import Hiking from '../src/views/Hiking'
 import theme from './theme';
+import About from '../src/views/About'
 
 // ##########
 // ##########
@@ -76,8 +76,8 @@ function App() {
           <Thrifting />
           <Games />
           <Plants />
-          <InteriorDesign />
           <Hiking />
+          <About />
         </Wrapper>
       </SizeContext.Provider>
     </BrowserRouter>
