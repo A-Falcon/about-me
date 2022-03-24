@@ -16,8 +16,31 @@ const ThriftingView: React.FC = () => {
       <Heading label={'THRIFTING'} id='thrifting'/>
       <Content style={ device.xs ? {flexDirection: 'column'} : {flexDirection: 'row'}}>
         { screenType === 'xs'
-        ? <ImgSlider /> 
-        : <Animation /> 
+        ? <>
+         <ImgSlider /> 
+          <TextBox>
+              <Desc> 
+                Above are some of my finds that have been my gateway to sustainable fashion. 
+              </Desc>
+              <Desc>
+                Shopping second-hand is a great way to repurpose and reduce waste in the landfill.
+              </Desc>
+          </TextBox>
+         
+          </>
+        : 
+        <>
+          <Animation />
+          <TextBox>
+              <Desc> 
+                Above are some of my finds that have been my gateway to sustainable fashion. 
+              </Desc>
+              <Desc>
+                Shopping second-hand is a great way to repurpose and reduce waste in the landfill.
+              </Desc>
+          </TextBox>
+        </>
+         
         }  
           
       </Content>
@@ -38,6 +61,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
+  
   justify-content: space-between;
   margin: 50px;
   height: auto;
@@ -49,20 +73,29 @@ const Content = styled.div`
   }
 `
 const TextBox = styled.div`
-  flex-direction: column;
-  width: 50%;
-  background-color:blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  /* background-color:blue; */
   @media ${device.xs} {
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `
 
 const Desc = styled.p`
-  font-size: ${(props) => props.theme.font.fontSize}px;
+  padding: 20px;
+  font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: ${(props) => props.theme.font.fontFam}; 
+  font-family: monospace; 
+  font-weight: 700;
   @media ${device.xs} {
-    font-size: ${(props) => props.theme.font.fontSize * .8}px;
+    font-size: ${(props) => props.theme.font.fontSize}px;
   }
 `
 // const List = styled.ul`

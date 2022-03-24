@@ -24,11 +24,11 @@ const Animation: React.FC = () => {
 
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: 95%;
   height: 500px;
-  media ${device.xs} {
+  /* media ${device.xs} {
     display: none;
-  }
+  } */
 `
 const List = styled.ul`
   min-height: 500px;
@@ -46,7 +46,6 @@ const List = styled.ul`
   `
 const Item = styled.li`
 flex-direction: row;
-
 /* width: 50%; */
 
 font-size: ${(props) => props.theme.font.fontSize * 2}px;
@@ -58,8 +57,10 @@ transition: 200ms;
   
 }
 `
-const ElemName = styled.span`
+const ElemName = styled.div`
+  border-bottom: 2px solid black;
 padding: 20px;
+width: 100%;
 &:hover {
 
   & ~ div {
