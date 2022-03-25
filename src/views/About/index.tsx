@@ -9,11 +9,11 @@ const About: React.FC = () => {
     <Wrapper>
       <Heading id='about'label={''}/>
       <HeroText>AHTZIRI</HeroText>
-      <Content>
+      {/* <Content>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-      </Content>
+      </Content> */}
     </Wrapper>
   )
 }
