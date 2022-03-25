@@ -55,7 +55,7 @@ text-align: center;
 `
 
 const ElemName = styled.span`
-padding: 20px;
+padding: 10px;
 font-size: 30px;
 font-family: ${(props) => props.theme.font.fontFam}
 `

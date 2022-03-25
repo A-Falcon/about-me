@@ -24,7 +24,7 @@ const Animation: React.FC = () => {
 
 
 const Wrapper = styled.div`
-  width: 95%;
+  width: 100%;
   height: 500px;
   /* media ${device.xs} {
     display: none;

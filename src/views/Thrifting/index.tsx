@@ -75,6 +75,7 @@ const Content = styled.div`
 const TextBox = styled.div`
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
   height: 200px;
