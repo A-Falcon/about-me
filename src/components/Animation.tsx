@@ -45,35 +45,32 @@ const List = styled.ul`
  
   `
 const Item = styled.li`
-flex-direction: row;
-/* width: 50%; */
-
-font-size: ${(props) => props.theme.font.fontSize * 2}px;
-color: ${(props) => props.theme.colors.text};
-font-family: ${(props) => props.theme.font.fontFam};
-transition: 200ms;
-&:hover {
-  color: ${(props) => props.theme.colors.light};
-  
-}
+  flex-direction: row;
+  font-size: ${(props) => props.theme.font.fontSize * 2}px;
+  color: ${(props) => props.theme.colors.text};
+  font-family: ${(props) => props.theme.font.fontFam};
+  transition: 200ms;
+  &:hover {
+    color: ${(props) => props.theme.colors.light};
+  }
 `
 const ElemName = styled.div`
   border-bottom: 2px solid black;
-padding: 20px;
-width: 100%;
-&:hover {
+  padding: 20px;
+  width: 80%;
+  &:hover {
 
-  & ~ div {
-    transform: rotate(5deg) scale(1);
-    opacity: 1;
+    & ~ div {
+      transform: rotate(5deg) scale(1);
+      opacity: 1;
+    }
   }
-}
 `
 const ImgCont = styled.div`
   /* margin-top: -200px; */
   display: flex;
   flex-direction: row;
-  margin-right: 200px;
+  margin-right: 25px;
   justify-content:flex-end;
   align-items: center;
   transform:  scale(1);

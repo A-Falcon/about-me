@@ -54,14 +54,14 @@ const Carousel: React.FC = () => {
   )
 }
 
-const ChevLeft = styled(FiChevronLeft)`
-  font-size: 60px;
-  width: 10%;
-`
-const ChevRight = styled(FiChevronRight)`
-  font-size: 60px;
-  width: 10%;
-`
+// const ChevLeft = styled(FiChevronLeft)`
+//   font-size: 60px;
+//   width: 10%;
+// `
+// const ChevRight = styled(FiChevronRight)`
+//   font-size: 60px;
+//   width: 10%;
+// `
 
 
 const Wrapper = styled.div`

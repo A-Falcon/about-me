@@ -9,11 +9,11 @@ const About: React.FC = () => {
     <Wrapper>
       <Heading id='about'label={''}/>
       <HeroText>AHTZIRI</HeroText>
-      {/* <Content>
+      <Content>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
         <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-      </Content> */}
+      </Content>
     </Wrapper>
   )
 }
@@ -46,6 +46,11 @@ const Content = styled.div`
   margin: 50px;
   display: flex;
   flex-direction: row;
+  @media ${device.xs} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 const Text = styled.p`
   padding: 10px;

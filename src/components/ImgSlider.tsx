@@ -34,11 +34,11 @@ const ImgSlider: React.FC = () => {
 }
 
 const ChevLeft = styled(FiChevronLeft)`
-  font-size: 60px;
+  font-size: ${(props) => props.theme.font.fontSize * 3}px;
   width: 10%;
 `
 const ChevRight = styled(FiChevronRight)`
-  font-size: 60px;
+  font-size: ${(props) => props.theme.font.fontSize * 3}px;
   width: 10%;
 `
 const Wrapper = styled.div`
@@ -58,13 +58,14 @@ text-align: center;
 const ElemName = styled.div`
 
 margin-top: 50px;
-font-size: 30px;
+font-size: ${(props) => props.theme.font.fontSize * 2.5}px;
 font-family: ${(props) => props.theme.font.fontFam}
 `
-const ImgCont = styled.div`
-/* background-color: pink; */
 
-`
+// const ImgCont = styled.div`
+// background-color: pink;
+
+// `
 
 const Img = styled.img`
 

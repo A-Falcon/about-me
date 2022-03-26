@@ -29,7 +29,7 @@ const ThriftingView: React.FC = () => {
          
           </>
         : 
-        <>
+        <div style={{display: 'flex', flexDirection: 'row'}}>
           <Animation />
           <TextBox>
               <Desc> 
@@ -39,7 +39,7 @@ const ThriftingView: React.FC = () => {
                 Shopping second-hand is a great way to repurpose and reduce waste in the landfill.
               </Desc>
           </TextBox>
-        </>
+        </div>
          
         }  
           
@@ -78,12 +78,13 @@ const Content = styled.div`
 `
 const TextBox = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-top: 80px;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -70px;
   align-items: center;
   height: auto;
-  width: 100%;
+  width: 50%;
+  
 
   
   @media ${device.xs} {
@@ -96,10 +97,10 @@ const TextBox = styled.div`
 
 const Desc = styled.p`
   padding: 5px;
-  font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
+  font-size: ${(props) => props.theme.font.fontSize}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: monospace; 
-  font-weight: 700;
+  font-family: ${(props) => props.theme.font.fontFam};
+  font-weight: ${(props) => props.theme.font.fontWeight};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

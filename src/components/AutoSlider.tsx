@@ -83,12 +83,12 @@ const SlideShowSlider = styled.div`
     
   }
 `
-const ElemName = styled.div`
+// const ElemName = styled.div`
 
-margin-top: 50px;
-font-size: 30px;
-font-family: ${(props) => props.theme.font.fontFam}
-`
+// margin-top: 50px;
+// font-size: ${(props) => props.theme.font.fontSize * 2}px;
+// font-family: ${(props) => props.theme.font.fontFam}
+// `
  const Slide = styled.img`
   display: inline-block;
   height: 500px;

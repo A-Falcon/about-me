@@ -110,8 +110,8 @@ const Desc = styled.p`
   
   font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: monospace; 
-  font-weight: 700;
+  font-family: ${(props) => props.theme.font.fontFam}; 
+  font-weight: ${(props) => props.theme.font.fontWeight};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

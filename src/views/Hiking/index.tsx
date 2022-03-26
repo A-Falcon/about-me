@@ -28,11 +28,11 @@ const HikingView: React.FC = () => {
         <>
           <Card  img={require('../../assets/canyon-me.png')} style={styles.cardLg}/>   
           <TextBox>
-          <Desc>
-            Below are some hiking trails I've been on recently.
-            I love to hike and enjoy the outdoors.
-          </Desc>
-        </TextBox>
+            <Desc>
+              Below are some hiking trails I've been on recently.
+              I love to hike and enjoy the outdoors.
+            </Desc>
+         </TextBox>
           <Carousel />
         </>
 }
@@ -85,7 +85,7 @@ const TextBox = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  height: auto;
+  height: 300px;
   width: 1300px;
   
   @media ${device.xs} {
@@ -102,8 +102,8 @@ const Desc = styled.p`
   
   font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: monospace; 
-  font-weight: 700;
+  font-family: ${(props) => props.theme.font.fontFam}; 
+  font-weight: ${(props) => props.theme.font.fontWeight};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

@@ -29,7 +29,8 @@ const Item = styled.h1`
   list-style-type: none;
   font-size: ${(props) => props.theme.font.fontSize}px; 
   text-transform: uppercase;
-  font-family: ${(props) => props.theme.font.fontFam};
+  font-family: ${(props) => props.theme.font.fontFamBold};
+  font-weight: ${(props) => props.theme.font.fontWeight * 2};
   transform: scale(1,1);
   -webkit-transform: scale(1,1); /* Safari and Chrome */
   -moz-transform: scale(1,1); /* Firefox */

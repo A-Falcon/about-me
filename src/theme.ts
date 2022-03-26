@@ -8,9 +8,10 @@ const theme = {
   },
 
   font: {
-    fontFam: 'Chango',
+    fontFam: 'Serif',
+    fontFamBold: 'Sans-Serif',
     fontSize: 22,
-    fontWeight: 700
+    fontWeight: 400
   }
  
 }

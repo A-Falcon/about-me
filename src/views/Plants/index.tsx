@@ -80,8 +80,8 @@ const Desc = styled.p`
   padding: 20px;
   font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: monospace;
-  font-weight: 700;
+  font-family: ${(props) => props.theme.font.fontFam};
+  font-weight: ${(props) => props.theme.font.fontWeight};
   @media ${device.xs} {
     width: 100%;
     font-size: ${(props) => props.theme.font.fontSize}px;

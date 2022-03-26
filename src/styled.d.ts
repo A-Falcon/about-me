@@ -14,6 +14,7 @@ declare module 'styled-components' {
 
     font: {
       fontFam: string
+      fontFamBold: string
       fontSize: number
       fontWeight: number
     }
