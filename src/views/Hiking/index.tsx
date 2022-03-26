@@ -63,6 +63,7 @@ const Wrapper = styled.div`
   @media ${device.xs} {
     min-height: 140vh;
     width: 100%;
+    height: auto;
   }
 `
 const Content = styled.div`

@@ -31,7 +31,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   
-  
+
+  @media ${device.xs} {
+    height: auto;
+    
+  }
 `
 const Content = styled.div`
   display: flex;
@@ -60,6 +64,7 @@ const TextBox = styled.div`
   width: 50%;
   padding: 0 2rem;
   margin-bottom: 400px;
+  
   @media ${device.xs} {
     width: auto;
     height:auto;

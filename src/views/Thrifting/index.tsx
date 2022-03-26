@@ -55,14 +55,15 @@ const Wrapper = styled.div`
   padding-top: 150px;
   @media ${device.xs} {
     padding-top: 50px;
-    height: 120vh;
+    height: auto;
+    
+    
   }
 `
 
 const Content = styled.div`
   display: flex;
   flex-direction: row;
-  
   justify-content: space-between;
   margin: 50px;
   height: auto;
@@ -70,7 +71,9 @@ const Content = styled.div`
 
   @media ${device.xs} {
     margin: 20px;
+    margin-bottom: 0px;
     flex-wrap: wrap;
+    
   }
 `
 const TextBox = styled.div`
@@ -79,9 +82,10 @@ const TextBox = styled.div`
   margin-top: 80px;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: auto;
   width: 100%;
-  /* background-color:blue; */
+
+  
   @media ${device.xs} {
     width: 100%;
     flex-direction: column;
@@ -91,7 +95,7 @@ const TextBox = styled.div`
 `
 
 const Desc = styled.p`
-  padding: 20px;
+  padding: 5px;
   font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
   color: ${(props) => props.theme.colors.text};
   font-family: monospace; 

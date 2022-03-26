@@ -53,6 +53,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media ${device.xs} {
+    height: auto;
+  }
 `
 const Content = styled.div`
   display: flex;
@@ -77,7 +80,7 @@ const BoxOfCards = styled.div`
   height:100%;
   
   @media ${device.xs} {
-    background-color: red;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

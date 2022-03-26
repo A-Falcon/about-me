@@ -65,11 +65,10 @@ const SlideShow = styled.div`
   overflow: hidden;
   max-width: 500px;
   margin-bottom: 500px;
-
   @media ${device.xs} {
     margin-bottom: 0px;
     width: 300px;
-    height: 300px;
+    height: 0px;
     padding-bottom: 400px;
   }
 `
