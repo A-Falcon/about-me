@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   padding-top: 150px;
   @media ${device.xs} {
     padding-top: 50px;
+    height: 120vh;
   }
 `
 
@@ -75,7 +76,7 @@ const Content = styled.div`
 const TextBox = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 80px;
   justify-content: center;
   align-items: center;
   height: 200px;

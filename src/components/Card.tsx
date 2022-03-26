@@ -26,10 +26,10 @@ const Wrapper = styled.img`
   &:hover {
     transform: scale(1.02); 
   }
-  /* @media ${device.xs} {
+  @media ${device.xs} {
     height:22.5rem;
     width: 20rem;
-  } */
+  }
 `
 
 export default Card

@@ -52,10 +52,12 @@ const Wrapper = styled.div`
 const Container = styled.div`
 flex-direction: column;
 text-align: center;
+
 `
 
-const ElemName = styled.span`
-padding: 10px;
+const ElemName = styled.div`
+
+margin-top: 50px;
 font-size: 30px;
 font-family: ${(props) => props.theme.font.fontFam}
 `
