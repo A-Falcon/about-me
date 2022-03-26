@@ -73,7 +73,9 @@ const Wrapper = styled.div`
   
   height: 600px;
   
-
+  @media ${device.xs} {
+    height: 400px;
+  }
 
 `
 const Item = styled.div`

@@ -29,13 +29,14 @@ const Wrapper = styled.div`
 `
 
 const Text = styled.p`
-  margin-top:5px;
+  margin-top:10px;
   font-size: ${(props) => props.theme.font.fontSize * 4}px;
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam};
   
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 2}px;
+    margin-top: 50px;
   }
 
 

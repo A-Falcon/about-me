@@ -16,11 +16,23 @@ const HikingView: React.FC = () => {
         { screenType === 'xs' 
         ? <>
             <Card img={require('../../assets/canyon-me.png')} style={styles.cardXs}/>
+            <TextBox>
+          <Desc>
+            Below are some hiking trails I've been on recently.
+            I love to hike and enjoy the outdoors.
+          </Desc>
+        </TextBox>
             <Carousel />
           </>
         : 
         <>
           <Card  img={require('../../assets/canyon-me.png')} style={styles.cardLg}/>   
+          <TextBox>
+          <Desc>
+            Below are some hiking trails I've been on recently.
+            I love to hike and enjoy the outdoors.
+          </Desc>
+        </TextBox>
           <Carousel />
         </>
 }
@@ -45,8 +57,13 @@ const styles = {
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.mid};
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
+
+  @media ${device.xs} {
+    min-height: 140vh;
+    width: 100%;
+  }
 `
 const Content = styled.div`
   display: flex;
@@ -59,6 +76,35 @@ const Content = styled.div`
 
   @media ${device.xs} {
     flex-wrap: wrap;
+  }
+`
+const TextBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: auto;
+  width: 1300px;
+  
+  @media ${device.xs} {
+    margin-top: 50px;
+    width: auto;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`
+
+const Desc = styled.p`
+  
+  font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
+  color: ${(props) => props.theme.colors.text};
+  font-family: monospace; 
+  font-weight: 700;
+  @media ${device.xs} {
+    font-size: ${(props) => props.theme.font.fontSize}px;
   }
 `
 
