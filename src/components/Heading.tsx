@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 `
 
 const Text = styled.p`
+  margin-top:5px;
   font-size: ${(props) => props.theme.font.fontSize * 4}px;
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam};

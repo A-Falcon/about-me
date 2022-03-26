@@ -5,7 +5,7 @@ import { plantData } from '../data/plantData';
 
 const delay = 3000;
 
-function Slideshow() {
+const Slideshow: React.FC = () => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef();
 

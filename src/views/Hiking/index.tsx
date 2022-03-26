@@ -15,18 +15,13 @@ const HikingView: React.FC = () => {
       <Content>
         { screenType === 'xs' 
         ? <>
-          <Card img={require('../../assets/canyon-me.png')} style={styles.cardXs}/>
-      
+            <Card img={require('../../assets/canyon-me.png')} style={styles.cardXs}/>
             <Carousel />
-      
-      
           </>
         : 
         <>
           <Card  img={require('../../assets/canyon-me.png')} style={styles.cardLg}/>   
-          
           <Carousel />
-          
         </>
 }
     
