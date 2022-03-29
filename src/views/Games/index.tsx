@@ -19,6 +19,11 @@ const Games: React.FC = () => {
                 You can usually find me playing lore driven games vs competeive games.
                 However survival sandbox games are great co-op or with a group of friends.
               </Desc>
+              <Desc> 
+                Below are some games I've been playing recenlty. 
+                You can usually find me playing lore driven games vs competeive games.
+                However survival sandbox games are great co-op or with a group of friends.
+              </Desc>
           </TextBox>
           <BoxOfCards>
             {gameData.map((elem, i) =>(
@@ -45,39 +50,48 @@ const styles = {
   }
 }
 const Wrapper = styled.div`
-
+  
   background-color: ${(props) => props.theme.colors.mid};
-  height: 150vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: auto;
 
   @media ${device.xs} {
     height: auto;
   }
+    @media ${device.sm} {
+      
+    }
 `
 const Content = styled.div`
+  
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 600px;
   width: 100%;
-
-
+  height: 40vh;
+  
   @media ${device.xs} {
     
     
   }
+
+    @media ${device.sm} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh
+  }
 `
 const BoxOfCards = styled.div`
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:100%;
+  height:auto;
   
   @media ${device.xs} {
     
@@ -92,28 +106,33 @@ const TextBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 50px;
+  padding-top: 0px;
   height: 200px;
-  width: 1300px;
+  width: auto;
   
   @media ${device.xs} {
     width: auto;
     height:auto;
-    margin-bottom: 50px;
+    padding: 20px;
+    padding-top: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
 `
 
 const Desc = styled.p`
-  
-  font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
+  padding: 20px;
+  padding-top: 0px;
+  font-size: ${(props) => props.theme.font.fontSize}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: ${(props) => props.theme.font.fontFam}; 
+  font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
+    padding:5px;
   }
 `
 

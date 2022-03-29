@@ -52,7 +52,7 @@ function useWindowDimensions() {
 }
 
 function getTypeForSize(size: number): ScreenSizeType {
-  if (size <= 420) return 'xs'
+  if (size <= 425) return 'xs'
   if (size <= 768) return 'sm'
   return 'lg'
 }

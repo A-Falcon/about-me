@@ -10,9 +10,18 @@ const About: React.FC = () => {
       <Heading id='about'label={''}/>
       <HeroText>AHTZIRI</HeroText>
       <Content>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
       </Content>
     </Wrapper>
   )
@@ -21,8 +30,13 @@ const About: React.FC = () => {
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.light};
-  height: 100vh;
+  height: auto;
   width: 100%;
+
+
+@media ${device.xs} {
+  padding-bottom: 80px;
+}
 `
 
 const HeroText = styled.h1`
@@ -40,9 +54,15 @@ const HeroText = styled.h1`
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 2.5}px; 
   }
+
+  @media ${device.sm} {
+    font-size: ${(props) => props.theme.font.fontSize * 3.5}px;
+  }
+
 `
 
 const Content = styled.div` 
+
   margin: 50px;
   display: flex;
   flex-direction: row;

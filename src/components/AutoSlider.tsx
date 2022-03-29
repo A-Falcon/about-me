@@ -46,12 +46,12 @@ const Slideshow: React.FC = () => {
       </SlideShowSlider>
 
       <SlideShowDots className="slideshowDots">
-        {plantData.map((_, idx) => (
+        {plantData.map((_, id) => (
           <Dot
-            key={idx}
-            style={index === idx ? {backgroundColor: '#fff'} : {backgroundColor: '#000'}}
+            key={id}
+            style={index === id ? {backgroundColor: '#f5ebe0'} : {backgroundColor: '#242424'}}
             onClick={() => {
-              setIndex(idx);
+              setIndex(id);
             }}
           ></Dot>
         ))}
@@ -64,23 +64,33 @@ const SlideShow = styled.div`
   margin: 0 auto;
   overflow: hidden;
   max-width: 500px;
-  margin-bottom: 500px;
+  
+  
   @media ${device.xs} {
-    margin-bottom: 0px;
-    width: 300px;
+    margin-top: 0px;
+    max-width: 300px;
     height: 0px;
     padding-bottom: 400px;
   }
+  @media ${device.sm} { 
+    margin-top: 0px;
+    max-width:500px;
+    
+  }
+
 `
 
 const SlideShowSlider = styled.div`
   white-space: nowrap;
   transition: ease 1000ms;
   @media ${device.xs} {
-    max-width: auto;
-    height: 300px;
+    max-width: 300px;
+    height: auto;
     padding-bottom: 10px;
-    
+  }
+  @media ${device.sm} {
+    max-width: auto;
+    height: 500px;
   }
 `
 // const ElemName = styled.div`
@@ -97,15 +107,22 @@ const SlideShowSlider = styled.div`
   border-radius: 40px;
   
   @media ${device.xs} {
-    height: 300px;
+    max-height: 300px;
     width: auto;
   }
+  @media ${device.sm} {
+    height: 500px;
+    width: auto;
+  }
+
+
 `
 
 /* Buttons */
 
 const SlideShowDots = styled.div`
   text-align: center;
+  color: ${(props) => props.theme.colors.text};
 `
 
  const Dot =  styled.div` 
@@ -113,7 +130,6 @@ const SlideShowDots = styled.div`
   height: 20px;
   width: 20px;
   border-radius: 50%;
-
   cursor: pointer;
   margin: 15px 7px 0px;
 

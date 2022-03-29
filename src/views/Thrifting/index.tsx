@@ -50,40 +50,51 @@ const ThriftingView: React.FC = () => {
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.mid};
-  height: 150vh;
+  height: auto;
   width: 100%;
   padding-top: 150px;
   @media ${device.xs} {
-    padding-top: 50px;
-    height: auto;
-    
-    
+
   }
+  @media ${device.sm} {
+    padding-top: 20px;
+  }
+
+
 `
 
 const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 50px;
-  height: auto;
+  padding: 50px;
+  min-height: 50vh;
   width: auto;
-
   @media ${device.xs} {
+    justify-content: flex-end;
     margin: 20px;
+    padding: 0px;
     margin-bottom: 0px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  @media ${device.sm} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     
   }
 `
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: -70px;
+  justify-content: center;
   align-items: center;
   height: auto;
   width: 50%;
+  margin-bottom: 90px;
+
   
 
   
@@ -92,6 +103,8 @@ const TextBox = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
+    margin: 50px;
   }
 `
 

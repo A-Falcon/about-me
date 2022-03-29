@@ -34,13 +34,19 @@ const Wrapper = styled.div`
 
   @media ${device.xs} {
     margin-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  @media ${device.sm} {
+  
   }
 `
 
 const HeroText = styled.h1`
   color: ${(props) => props.theme.colors.text};
+  
   text-align: center;
-  font-size: ${(props) => props.theme.font.fontSize * 10}px; 
+  font-size: ${(props) => props.theme.font.fontSize * 15}px; 
   text-transform: uppercase;
   font-family: ${(props) => props.theme.font.fontFam};
   transform: scale(1,3);
@@ -52,6 +58,9 @@ const HeroText = styled.h1`
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 2.5}px; 
   }
+
+ 
+
 `
 
 export default HomeView

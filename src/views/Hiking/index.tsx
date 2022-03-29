@@ -26,7 +26,7 @@ const HikingView: React.FC = () => {
           </>
         : 
         <>
-          <Card  img={require('../../assets/canyon-me.png')} style={styles.cardLg}/>   
+          <Card  img={require('../../assets/canyon-me.png')} style={styles.cardXLg}/>   
           <TextBox>
             <Desc>
               Below are some hiking trails I've been on recently.
@@ -44,9 +44,9 @@ const HikingView: React.FC = () => {
 }
 
 const styles = {
-  cardLg: {
-    height: '1000px',
-    width: '1250px'
+  cardXLg: {
+    height: 'auto',
+    width: '80%',
   },
   cardXs: {
     display: 'flex',
@@ -64,6 +64,8 @@ const Wrapper = styled.div`
     min-height: 140vh;
     width: 100%;
     height: auto;
+    
+  
   }
 `
 const Content = styled.div`
@@ -77,6 +79,7 @@ const Content = styled.div`
 
   @media ${device.xs} {
     flex-wrap: wrap;
+    min-height: 100vh
   }
 `
 const TextBox = styled.div`
@@ -86,7 +89,7 @@ const TextBox = styled.div`
   align-items: center;
   padding: 0 2rem;
   height: 300px;
-  width: 1300px;
+  width: auto;
   
   @media ${device.xs} {
     margin-top: 50px;
@@ -99,8 +102,7 @@ const TextBox = styled.div`
 `
 
 const Desc = styled.p`
-  
-  font-size: ${(props) => props.theme.font.fontSize * 1.5}px;
+  font-size: ${(props) => props.theme.font.fontSize}px;
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam}; 
   font-weight: ${(props) => props.theme.font.fontWeight};

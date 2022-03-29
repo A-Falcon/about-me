@@ -18,7 +18,7 @@ const Card: React.FC<CardProps>= ({style, img}) => {
 const Wrapper = styled.img`
   object-fit: cover;
   height: 85%;
-  width:  45%;
+  width: 45%;
   border-radius: 10%;
   background-color: ${(props) => props.theme.colors.dark};
   box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);
@@ -29,6 +29,10 @@ const Wrapper = styled.img`
   @media ${device.xs} {
     height:22.5rem;
     width: 20rem;
+  }
+  @media ${device.sm} {
+    height:auto;
+    width: 80%;
   }
 `
 

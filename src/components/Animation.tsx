@@ -25,13 +25,14 @@ const Animation: React.FC = () => {
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 500px;
+  height: auto;
+  
   /* media ${device.xs} {
     display: none;
   } */
 `
 const List = styled.ul`
-  min-height: 500px;
+  min-height: auto;
   display: flex;
   flex-direction:column;
   justify-content: space-evenly;
@@ -50,14 +51,16 @@ const Item = styled.li`
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam};
   transition: 200ms;
+  
   &:hover {
     color: ${(props) => props.theme.colors.light};
   }
 `
 const ElemName = styled.div`
-  border-bottom: 2px solid black;
+  border-bottom: 1.5px solid black;
   padding: 20px;
   width: 80%;
+  
   &:hover {
 
     & ~ div {
@@ -70,7 +73,7 @@ const ImgCont = styled.div`
   /* margin-top: -200px; */
   display: flex;
   flex-direction: row;
-  margin-right: 25px;
+  margin-right: 100px;
   justify-content:flex-end;
   align-items: center;
   transform:  scale(1);

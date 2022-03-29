@@ -17,29 +17,11 @@ const responsive = {
 
 const Carousel: React.FC = () => {
   const screenType = useContext(SizeContext)
-  //########################################### By Buttons
-  
-  // const showFirstThreeImages = () => {
-  //   return hikingData.slice(0, 3)
-  // }
-
-  // const [current, setCurrent] = useState(showFirstThreeImages())
-
-  // const nextSlide = () =>{ 
-  //   setCurrent(current.length === hikingData.length ? showFirstThreeImages() : current.concat(hikingData[current.length]))
-  // }
-  // const prevSlide= () =>{
-  //   setCurrent(current.length === 3 ? hikingData.slice(hikingData.length - 3, hikingData.length) : current.slice(0, current.length - 1))
-  // }
-
-  //############################################ My Buttons
-  
 
   const ting = hikingData.map((elem, i) => (
     
         <Item key={i}>
-          {/* <Img src={elem.img} alt={elem.name} /> */}
-          <Card  img={elem.img}  style={ screenType === 'xs' ? {width: '150px', height: 'auto'} : {height: 'auto', width: 'auto'}}/>
+          <Card  img={elem.img}  style={ screenType === 'xs' ? styles.cardXs : styles.cardXLg}/>
         </Item>
       ))
 
@@ -47,26 +29,56 @@ const Carousel: React.FC = () => {
 
   return (
     <Wrapper> 
-      <AliceCarousel  controlsStrategy="alternate"  mouseTracking items={ting} responsive={responsive} />
-        {/* <ChevLeft className='left-arrow' onPointerDown={nextSlide}/>
-        <ChevRight className='right-arrow' onPointerDown={prevSlide}/>  */}
+      <AliceCarousel
+        infinite 
+        controlsStrategy="alternate"  
+        mouseTracking items={ting} 
+        responsive={responsive} 
+        />
+        {/* <ButtonWrap>
+          <ChevLeft className='left-arrow' onPointerDown={nextSlide}/>
+          <ChevRight className='right-arrow' onPointerDown={prevSlide}/> 
+        </ButtonWrap> */}
+
+        
     </Wrapper>
   )
 }
 
 // const ChevLeft = styled(FiChevronLeft)`
-//   font-size: 60px;
+//   font-size: ${(props) => props.theme.font.fontSize * 3}px;
+//   height: 150px;
 //   width: 10%;
 // `
 // const ChevRight = styled(FiChevronRight)`
-//   font-size: 60px;
+//   font-size: ${(props) => props.theme.font.fontSize * 3}px;
+//   height: 150px;
 //   width: 10%;
 // `
+// const ButtonWrap = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   height:100px;
+//   background-color: red;
+// `
 
+const styles = {
+  cardXLg: {
+    height: 'auto',
+    width: '60%',
+  },
+  cardXs: {
+    display: 'flex',
+    height: 'auto',
+    width: '100%'
+  }
+}
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -75,11 +87,13 @@ const Wrapper = styled.div`
   
   @media ${device.xs} {
     height: 400px;
+    
   }
 
 `
 const Item = styled.div`
   
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

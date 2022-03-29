@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import {thriftData} from '../data/thriftData'
 import {FiChevronLeft,FiChevronRight} from 'react-icons/fi'
+import { device } from '../data/device'
 
 const ImgSlider: React.FC = () => {
 
@@ -35,10 +36,12 @@ const ImgSlider: React.FC = () => {
 
 const ChevLeft = styled(FiChevronLeft)`
   font-size: ${(props) => props.theme.font.fontSize * 3}px;
+  height: 150px;
   width: 10%;
 `
 const ChevRight = styled(FiChevronRight)`
   font-size: ${(props) => props.theme.font.fontSize * 3}px;
+  height: 150px;
   width: 10%;
 `
 const Wrapper = styled.div`
@@ -47,19 +50,20 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: row;
   align-items: center;
-  
+  @media ${device.xs} {
+    
+  }
 `
 const Container = styled.div`
-flex-direction: column;
-text-align: center;
-
+  flex-direction: column;
+  text-align: center;
 `
-
 const ElemName = styled.div`
-
-margin-top: 50px;
-font-size: ${(props) => props.theme.font.fontSize * 2.5}px;
-font-family: ${(props) => props.theme.font.fontFam}
+  margin-top: 20px;
+  color: ${(props) => props.theme.colors.text};
+  font-size: ${(props) => props.theme.font.fontSize * 2}px;
+  font-family: ${(props) => props.theme.font.fontFamBold};
+  font-weight: ${(props) => props.theme.font.fontWeight * 2};
 `
 
 // const ImgCont = styled.div`

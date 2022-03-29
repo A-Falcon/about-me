@@ -27,7 +27,8 @@ const Wrapper = styled.div`
   @media ${device.xs} {
     height: 40vh;
     margin-top: 25vh;
-    margin-bottom: -75px;
+    margin-bottom: -100px;
+    padding-bottom: 80px;
   }
 `
 
