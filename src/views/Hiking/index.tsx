@@ -1,11 +1,15 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import Card from '../../components/Card'
+
+import { SizeContext } from '../../App'
 import {device} from '../../data/device'
-import Carousel from '../../components/Carousel'
 
 import Heading from '../../components/Heading'
-import { SizeContext } from '../../App'
+import Card from '../../components/Card'
+import Carousel from '../../components/Carousel'
+
+
+
 
 const HikingView: React.FC = () => {
   const screenType = useContext(SizeContext)
@@ -64,8 +68,6 @@ const Wrapper = styled.div`
     min-height: 140vh;
     width: 100%;
     height: auto;
-    
-  
   }
 `
 const Content = styled.div`
@@ -75,7 +77,6 @@ const Content = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
-  
 
   @media ${device.xs} {
     flex-wrap: wrap;
@@ -87,25 +88,24 @@ const TextBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
   height: 300px;
   width: auto;
+  padding: 0 2rem;
   
   @media ${device.xs} {
-    margin-top: 50px;
-    width: auto;
-    height:auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:auto;
+    width: auto;
+    margin-top: 50px;
   }
 `
-
 const Desc = styled.p`
   font-size: ${(props) => props.theme.font.fontSize}px;
-  color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam}; 
   font-weight: ${(props) => props.theme.font.fontWeight};
+  color: ${(props) => props.theme.colors.text};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

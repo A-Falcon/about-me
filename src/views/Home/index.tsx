@@ -18,8 +18,8 @@ const HomeLink = styled.div`
   width: 100%;
   height: 1px;
 `
-
 const Wrapper = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -36,15 +36,10 @@ const Wrapper = styled.div`
     margin-top: 50px;
     padding-bottom: 80px;
   }
-
-  @media ${device.sm} {
-  
-  }
 `
 
 const HeroText = styled.h1`
   color: ${(props) => props.theme.colors.text};
-  
   text-align: center;
   font-size: ${(props) => props.theme.font.fontSize * 15}px; 
   text-transform: uppercase;
@@ -58,9 +53,6 @@ const HeroText = styled.h1`
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 2.5}px; 
   }
-
- 
-
 `
 
 export default HomeView

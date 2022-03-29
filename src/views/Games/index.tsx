@@ -2,10 +2,13 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import Card from '../../components/Card'
 
-import Heading from '../../components/Heading'
+import { SizeContext } from '../../App'
 import { device } from '../../data/device'
 import { gameData } from '../../data/gameData'
-import { SizeContext } from '../../App'
+
+
+import Heading from '../../components/Heading'
+
 
 const Games: React.FC = () => {
   const screenType = useContext(SizeContext)
@@ -50,30 +53,20 @@ const styles = {
   }
 }
 const Wrapper = styled.div`
-  
-  background-color: ${(props) => props.theme.colors.mid};
   height: auto;
+  background-color: ${(props) => props.theme.colors.mid};
 
   @media ${device.xs} {
     height: auto;
   }
-    @media ${device.sm} {
-      
-    }
 `
 const Content = styled.div`
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 40vh;
-  
-  @media ${device.xs} {
-    
-    
-  }
 
     @media ${device.sm} {
     display: flex;
@@ -84,17 +77,15 @@ const Content = styled.div`
   }
 `
 const BoxOfCards = styled.div`
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height:auto;
+  width: 100%;
   
   @media ${device.xs} {
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -106,30 +97,30 @@ const TextBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  padding-top: 0px;
   height: 200px;
   width: auto;
-  
+  padding-top: 0px;
+  padding: 50px;
+
   @media ${device.xs} {
-    width: auto;
-    height:auto;
-    padding: 20px;
-    padding-top: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:auto;
+    width: auto;
+    padding-top: 0px;
+    padding: 20px;
   }
-
 `
 
 const Desc = styled.p`
-  padding: 20px;
-  padding-top: 0px;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
+  color: ${(props) => props.theme.colors.text};
+  padding-top: 0px;
+  padding: 20px;
+  
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
     padding:5px;

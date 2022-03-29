@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 
-import Heading from '../../components/Heading'
-import Card from '../../components/Card'
+import { SizeContext } from '../../App'
 import { device } from '../../data/device'
+
+import Heading from '../../components/Heading'
 import Animation from '../../components/Animation'
 import ImgSlider from '../../components/ImgSlider'
-import { SizeContext } from '../../App'
+
 
 
 const ThriftingView: React.FC = () => {
@@ -49,41 +50,36 @@ const ThriftingView: React.FC = () => {
 }
 
 const Wrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.mid};
   height: auto;
   width: 100%;
   padding-top: 150px;
-  @media ${device.xs} {
-
-  }
+  background-color: ${(props) => props.theme.colors.mid};
+  
   @media ${device.sm} {
     padding-top: 20px;
   }
-
-
 `
-
 const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 50px;
   min-height: 50vh;
   width: auto;
+  padding: 50px;  
+
   @media ${device.xs} {
-    justify-content: flex-end;
-    margin: 20px;
-    padding: 0px;
-    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   @media ${device.sm} {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
   }
 `
 const TextBox = styled.div`
@@ -95,56 +91,23 @@ const TextBox = styled.div`
   width: 50%;
   margin-bottom: 90px;
 
-  
-
-  
   @media ${device.xs} {
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    width: 100%;
     margin: 50px;
+    margin-bottom: 0px;
   }
 `
-
 const Desc = styled.p`
-  padding: 5px;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
+  color: ${(props) => props.theme.colors.text};
+  padding: 5px;
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }
 `
-// const List = styled.ul`
-//   height: auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   background-color: red;
-//   margin: 10px;
-//   margin-left: -10px;
-//   @media ${device.xs} {
-//     margin-left: -20px;
-//   }
-//   `
-// const Item = styled.li`
-//   border-bottom: 2px solid black;
-//   /* width: 50%; */
-//   padding: 10px;
-//   font-size: ${(props) => props.theme.font.fontSize * 2}px;
-//   color: ${(props) => props.theme.colors.text};
-//   font-family: ${(props) => props.theme.font.fontFam};
-//   transition: 200ms;
-//   &:hover {
-//     color: ${(props) => props.theme.colors.dark};
-    
-//   }
-
-//   @media ${device.xs} {
-//     font-size: ${(props) => props.theme.font.fontSize * .9}px;
-//   }
-// `
 export default ThriftingView
