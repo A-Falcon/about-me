@@ -23,7 +23,8 @@ const HikingView: React.FC = () => {
             <TextBox>
           <Desc>
             Below are some hiking trails I've been on recently.
-            I love to hike and enjoy the outdoors.
+            Every now and then I love to get away from the city and appreciate nature.
+            Although I haven't been on many trails or national parks, I look forwawrd to traveling to new places.
           </Desc>
         </TextBox>
             <Carousel />
@@ -33,8 +34,9 @@ const HikingView: React.FC = () => {
           <Card  img={require('../../assets/canyon-me.png')} style={styles.cardXLg}/>   
           <TextBox>
             <Desc>
-              Below are some hiking trails I've been on recently.
-              I love to hike and enjoy the outdoors.
+            Below are some hiking trails I've been on recently.
+            Every now and then I love to get away from the city and appreciate nature.
+            Although I haven't been on many trails or national parks, I look forwawrd to traveling to new places.
             </Desc>
          </TextBox>
           <Carousel />
@@ -90,7 +92,7 @@ const TextBox = styled.div`
   align-items: center;
   height: 300px;
   width: auto;
-  padding: 0 2rem;
+  padding: 0 12rem;
   
   @media ${device.xs} {
     flex-direction: column;
@@ -99,9 +101,11 @@ const TextBox = styled.div`
     height:auto;
     width: auto;
     margin-top: 50px;
+    padding: 0 2rem;
   }
 `
 const Desc = styled.p`
+  line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
   font-family: ${(props) => props.theme.font.fontFam}; 
   font-weight: ${(props) => props.theme.font.fontWeight};

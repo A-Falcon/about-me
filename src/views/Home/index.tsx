@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   z-index: -1; 
 
   @media ${device.xs} {
-    margin-top: 50px;
+    margin-top: -200px;
     padding-bottom: 80px;
   }
 `
@@ -51,7 +51,7 @@ const HeroText = styled.h1`
   -o-transform: scale(1, 3); /* Opera */
 
   @media ${device.xs} {
-    font-size: ${(props) => props.theme.font.fontSize * 2.5}px; 
+    font-size: ${(props) => props.theme.font.fontSize * 4}px; 
   }
 `
 

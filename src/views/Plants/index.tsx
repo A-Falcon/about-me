@@ -14,10 +14,10 @@ const Plants: React.FC = () => {
       <Content>
         <TextBox>
           <Desc>
-            I love to plant and grow plants. I have a passion for plants and love to share my knowledge of how to grow plants.
+           For me gardening and tending to my plants has always been a nice way to spend my free time. It's my favorite way to start my morning and one of the best ways to decompress from work.
           </Desc>
           <Desc>
-            I love to plant and grow plants. I have a passion for plants and love to share my knowledge of how to grow plants.
+            I love Autum/Winter months but definitley look forward to Spring soley for the gardening season.
           </Desc>
         </TextBox>
         <AutoSlider />
@@ -91,6 +91,7 @@ const TextBox = styled.div`
   }
 `
 const Desc = styled.p`
+  line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};

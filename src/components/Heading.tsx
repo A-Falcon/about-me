@@ -18,7 +18,6 @@ const Heading: React.FC<HeadingProps>= ({label, id}) => {
 
 
 const Wrapper = styled.div`
-
   padding: 50px;
   
   @media ${device.xs} {

@@ -3,31 +3,33 @@ import styled from 'styled-components'
 
 import {device} from '../../data/device'
 
-import Heading from '../../components/Heading'
+
 
 const About: React.FC = () => {
   return (
     <Wrapper>
-      <Heading id='about'label={''}/>
+      <HomeLink id='about'></HomeLink>
       <HeroText>AHTZIRI</HeroText>
       <Content>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </Text>
+        <Desc>
+          Ahtziri Falcon is a self-taught Software Developer with a passion for learning and problem solving. While she has many hobbies and interests, 
+          her career focus is software developement. She is currently working on a project to showcase her talents and to broaden her horizons.
+          Being a person who loves 'doing', she is always looking for new challenges and ways to improve her skills.
+        </Desc>
+        <Desc>
+          Outside of software developement, Ahtziri is a multi-hat wearer that loves to explore different hobbies and build different skills.
+          More often than not, you can usually find her finding a new past time to add to her collection.
+          It doesn't matter if it's a hobby or a career, Ahtziri is always looking forward to learn and grow.
+        </Desc>
       </Content>
     </Wrapper>
   )
 }
 
+const HomeLink = styled.div`
+  width: 100%;
+  height: 5px;
+`
 
 const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.light};
@@ -63,21 +65,26 @@ const HeroText = styled.h1`
 `
 
 const Content = styled.div` 
-
-  margin: 50px;
   display: flex;
   flex-direction: row;
+  margin: 50px;
+
   @media ${device.xs} {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 `
-const Text = styled.p`
-  padding: 10px;
-  color: ${(props) => props.theme.colors.text};
+const Desc = styled.p`
+  line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
   font-family: ${(props) => props.theme.font.fontFam};
+  font-weight: ${(props) => props.theme.font.fontWeight};
+  color: ${(props) => props.theme.colors.text};
+  padding: 20px;
+  @media ${device.xs} {
+    font-size: ${(props) => props.theme.font.fontSize}px;
+  }
 `
 // const Carasoul = styled.div`
 

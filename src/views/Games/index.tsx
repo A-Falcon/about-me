@@ -20,12 +20,11 @@ const Games: React.FC = () => {
               <Desc> 
                 Below are some games I've been playing recenlty. 
                 You can usually find me playing lore driven games vs competeive games.
-                However survival sandbox games are great co-op or with a group of friends.
+                However survival sandbox games are great for co-op or with a group of friends.
               </Desc>
               <Desc> 
-                Below are some games I've been playing recenlty. 
-                You can usually find me playing lore driven games vs competeive games.
-                However survival sandbox games are great co-op or with a group of friends.
+                I would say I am a very obessive gamer in the sense that I will min-max anything I can in the game.
+                However, as much as I love competitive games, I am not the best in that department.
               </Desc>
           </TextBox>
           <BoxOfCards>
@@ -66,14 +65,18 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40vh;
+  min-height: 50vh;
+  height: auto;
+  margin-top: -150px;
 
     @media ${device.sm} {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 80vh
+    min-height: 100vh;
+    height: auto;
+    margin-top: 0px;
   }
 `
 const BoxOfCards = styled.div`
@@ -114,6 +117,7 @@ const TextBox = styled.div`
 `
 
 const Desc = styled.p`
+  line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};

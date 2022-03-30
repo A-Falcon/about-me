@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { device } from '../../data/device'
-
 import Card from '../../components/Card'
 
 const PortraitView: React.FC = () => {
