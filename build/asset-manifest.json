@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a1bc8792.css",
+    "main.js": "/static/js/main.e074c0ed.js",
+    "static/js/787.bf6be429.chunk.js": "/static/js/787.bf6be429.chunk.js",
+    "static/media/canyon-me.png": "/static/media/canyon-me.f562cd7582ac7a55f6f9.png",
+    "static/media/car-pic.png": "/static/media/car-pic.116b3f571d0429b12364.png",
+    "static/media/basil.png": "/static/media/basil.655227816621e5af3f1c.png",
+    "static/media/wandering-dude.png": "/static/media/wandering-dude.57c983074ccf28df3761.png",
+    "static/media/arrowHead.png": "/static/media/arrowHead.38d113220c467d75e10c.png",
+    "static/media/fish.png": "/static/media/fish.5a9535267025381bcf6c.png",
+    "static/media/monstera.png": "/static/media/monstera.6d424716f56ed66103d7.png",
+    "static/media/jeans-rs.png": "/static/media/jeans-rs.3c3b1236c6d9fe7b06ae.png",
+    "static/media/forest-me.png": "/static/media/forest-me.424d68eb7c0ff44e5c43.png",
+    "static/media/forest.png": "/static/media/forest.0c7528b51f299a83c113.png",
+    "static/media/rocks.png": "/static/media/rocks.6c8732f8391ca670e2c0.png",
+    "static/media/face.png": "/static/media/face.218ed0af58ab46182bcb.png",
+    "static/media/jewlery-rs.png": "/static/media/jewlery-rs.a259c23aa8088cfa244a.png",
+    "static/media/decor-rs.png": "/static/media/decor-rs.0680e981c11a892fa748.png",
+    "static/media/bags-rs.png": "/static/media/bags-rs.2ad3608099bd79926935.png",
+    "static/media/canyon-overview.png": "/static/media/canyon-overview.6b9e15341afa10420a0b.png",
+    "static/media/ark-logo.png": "/static/media/ark-logo.5c1dd9c16deba60c1666.png",
+    "static/media/mgs3-logo.png": "/static/media/mgs3-logo.9bf41cd6c222796e99e8.png",
+    "static/media/cyberpunk-logo.png": "/static/media/cyberpunk-logo.381130f51275d70c8924.png",
+    "static/media/overwatch-logo.png": "/static/media/overwatch-logo.77e8b8e9fd9751b11d89.png",
+    "static/media/suede-jacket-rs.png": "/static/media/suede-jacket-rs.9df5edb8908459dd478a.png",
+    "static/media/splitgate-logo.png": "/static/media/splitgate-logo.dcf9b590286f260f555e.png",
+    "static/media/forest-logo.png": "/static/media/forest-logo.18a28bba1b3119ee3b5e.png",
+    "index.html": "/index.html",
+    "main.a1bc8792.css.map": "/static/css/main.a1bc8792.css.map",
+    "main.e074c0ed.js.map": "/static/js/main.e074c0ed.js.map",
+    "787.bf6be429.chunk.js.map": "/static/js/787.bf6be429.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1bc8792.css",
+    "static/js/main.e074c0ed.js"
+  ]
+}
