@@ -49,7 +49,7 @@ const Slideshow: React.FC = () => {
         {travelData.map((_, id) => (
           <Dot
             key={id}
-            style={index === id ? {backgroundColor: '#f5ebe0'} : {backgroundColor: '#242424'}}
+            style={index === id ? {backgroundColor:'#3B0001'} : {backgroundColor: '#242424'}}
             onClick={() => {
               setIndex(id);
             }}

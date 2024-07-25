@@ -74,10 +74,10 @@ function App() {
           <NavBar />
           <Home />
           <Portrait />
+          <Travel />
           <Thrifting />
           <Games />
           {/* <Plants /> */}
-          <Travel />
           <Hiking />
           <About />
         </Wrapper>

@@ -6,9 +6,10 @@ const NavBar:React.FC = () => {
   return (
     <Wrapper>  
       <NavItem to={'#home'} label={'Home'}/>
+      <NavItem to={'#travel'} label={'Travel'} />
       <NavItem to={'#thrifting'} label={'Thrifting'}/>
       <NavItem to={'#games'} label={'Games'}/>
-      <NavItem to={'#plants'} label={'Plants'} />
+      {/* <NavItem to={'#plants'} label={'Plants'} /> */}
       <NavItem  to={'#hiking'} label={'Hiking'} />
       <NavItem to={'#about'} label={'About'}/> 
     </Wrapper>

@@ -19,7 +19,7 @@ const HikingView: React.FC = () => {
       <Content>
         { screenType === 'xs' 
         ? <>
-            <Card img={require('../../assets/canyon-me.png')} style={styles.cardXs}/>
+            <Card img={require('../../assets/Hiking/canyon-me.png')} style={styles.cardXs}/>
             <TextBox>
           <Desc>
             Below are some hiking trails I've been on recently.
@@ -31,7 +31,7 @@ const HikingView: React.FC = () => {
           </>
         : 
         <>
-          <Card  img={require('../../assets/canyon-me.png')} style={styles.cardXLg}/>   
+          <Card  img={require('../../assets/Hiking/canyon-me.png')} style={styles.cardXLg}/>   
           <TextBox>
             <Desc>
             Below are some hiking trails I've been on recently.

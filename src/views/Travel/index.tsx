@@ -14,7 +14,7 @@ const Travel: React.FC = () => {
       <Content>
         <TextBox>
           <Desc>
-           When given the oppertunity, I love to travel. Here are some of the photos of my most recent trip to Japan.
+           When given the oppertunity, I love to travel. Here are some of the photos of my 2024 Japan trip.
           </Desc>
           <Desc>
             Looking Forward to many more adventures!
@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100%;
+  padding-top: 150px;
   background-color: ${(props) => props.theme.colors.black};
 
   @media ${device.xs} {
