@@ -21,8 +21,8 @@ export const gameData = [
   },
   {
     id: 'p5',
-    name: 'Splitgate',
-    img: require('../assets/splitgate-logo.png')
+    name: 'Bayonetta 3',
+    img: require('../assets/bayonetta3.png')
   },
   {
     id: 'p6',
