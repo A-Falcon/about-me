@@ -9,6 +9,7 @@ import Home from '../src/views/Home'
 import Portrait from '../src/views/Portrait'
 import Thrifting from './views/Thrifting'
 import Games from '../src/views/Games'
+import Travel from '../src/views/Travel'
 import Plants from '../src/views/Plants'
 import Hiking from '../src/views/Hiking'
 import theme from './theme';
@@ -75,7 +76,8 @@ function App() {
           <Portrait />
           <Thrifting />
           <Games />
-          <Plants />
+          {/* <Plants /> */}
+          <Travel />
           <Hiking />
           <About />
         </Wrapper>
