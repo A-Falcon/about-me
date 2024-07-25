@@ -62,7 +62,7 @@ const styles = {
 }
 
 const Wrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.mid};
+  background-color: ${(props) => props.theme.colors.black};
   min-height: 100vh;
   width: 100%;
 

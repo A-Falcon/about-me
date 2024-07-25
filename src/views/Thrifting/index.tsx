@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   height: auto;
   width: 100%;
   padding-top: 150px;
-  background-color: ${(props) => props.theme.colors.mid};
+  background-color: ${(props) => props.theme.colors.black};
   
   @media ${device.sm} {
     padding-top: 20px;

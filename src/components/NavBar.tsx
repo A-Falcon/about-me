@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   align-items:center;
   width: 100%;
   min-height: 50px;
-  background-color: ${(props) => props.theme.colors.light};
+  background-color: ${(props) => props.theme.colors.black};
   flex-wrap: wrap;
   z-index: 1;
 

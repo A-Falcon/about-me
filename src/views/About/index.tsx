@@ -32,7 +32,7 @@ const HomeLink = styled.div`
 `
 
 const Wrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.light};
+  background-color: ${(props) => props.theme.colors.black};
   height: auto;
   width: 100%;
 
@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 `
 
 const HeroText = styled.h1`
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.blood};
   text-align: center;
   font-size: ${(props) => props.theme.font.fontSize * 10}px; 
   text-transform: uppercase;

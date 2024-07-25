@@ -53,7 +53,7 @@ const styles = {
 }
 const Wrapper = styled.div`
   height: auto;
-  background-color: ${(props) => props.theme.colors.mid};
+  background-color: ${(props) => props.theme.colors.black};
 
   @media ${device.xs} {
     height: auto;

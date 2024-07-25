@@ -53,7 +53,7 @@ const Item = styled.li`
   transition: 200ms;
   
   &:hover {
-    color: ${(props) => props.theme.colors.light};
+    color: ${(props) => props.theme.colors.blood};
   }
 `
 const ElemName = styled.div`

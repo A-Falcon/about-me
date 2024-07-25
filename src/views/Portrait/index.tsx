@@ -7,7 +7,7 @@ import Card from '../../components/Card'
 const PortraitView: React.FC = () => {
   return (
     <Wrapper>
-      <Card img={require('../../assets/car-pic.png')}/>
+      <Card img={require('../../assets/car.png')}/>
     </Wrapper>
   )
 }

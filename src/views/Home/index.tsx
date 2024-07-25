@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   margin-top: 1vh;
-  background-color: ${(props) => props.theme.colors.light};
+  background-color: ${(props) => props.theme.colors.black};
   position:fixed;
   top:0;
   left:0;
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 `
 
 const HeroText = styled.h1`
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.blood};
   text-align: center;
   font-size: ${(props) => props.theme.font.fontSize * 15}px; 
   text-transform: uppercase;
