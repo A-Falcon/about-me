@@ -1,5 +1,5 @@
 const size = {
-  xs: '425px',
+  xs: '430px',
   sm: '820px',
   lg: '1800px',
   // xs: '360px',

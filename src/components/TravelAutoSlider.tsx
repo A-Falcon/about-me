@@ -61,20 +61,27 @@ const Slideshow: React.FC = () => {
 }
 
 const SlideShow = styled.div`
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
   margin: 0 auto;
   overflow: hidden;
+  height: 650px;
   max-width: 500px;
   
+  /* backgroundColor: red;  */
+  /* testing ^ */
   
   @media ${device.xs} {
     margin-top: 0px;
-    max-width: 300px;
+    /* max-width: 300px; */
     height: 0px;
     padding-bottom: 400px;
   }
   @media ${device.sm} { 
     margin-top: 0px;
-    max-width:500px;
+    /* max-width:500px; */
     
   }
 
@@ -83,8 +90,12 @@ const SlideShow = styled.div`
 const SlideShowSlider = styled.div`
   white-space: nowrap;
   transition: ease 1000ms;
+  height: auto;
+
+  /* backgroundColor: blue; */
+  /* testing ^ */
   @media ${device.xs} {
-    max-width: 300px;
+    max-width:300px;
     height: auto;
     padding-bottom: 10px;
   }
@@ -101,18 +112,18 @@ const SlideShowSlider = styled.div`
 // `
  const Slide = styled.img`
   display: inline-block;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
   width: 100%;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   
   @media ${device.xs} {
     max-height: 300px;
     width: auto;
   }
   @media ${device.sm} {
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 300px;
   }
 
 

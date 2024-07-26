@@ -16,7 +16,7 @@ const ThriftingView: React.FC = () => {
     <Wrapper>
       <Heading label={'THRIFTING'} id='thrifting'/>
       <Content style={ device.xs ? {flexDirection: 'column'} : {flexDirection: 'row'}}>
-        { screenType === 'xs'
+        { screenType >= 'xs'
         ? <>
          <ImgSlider /> 
           <TextBox>
