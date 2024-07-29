@@ -52,11 +52,11 @@ const ThriftingView: React.FC = () => {
 const Wrapper = styled.div`
   height: auto;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 15vh;
   background-color: ${(props) => props.theme.colors.black};
   
   @media ${device.sm} {
-    padding-top: 20px;
+    padding-top: 2vh;
   }
 `
 const Content = styled.div`
@@ -71,9 +71,9 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 20px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin: 2vh;
+    margin-bottom: 0vh;
+    padding: 0vh;
   }
   @media ${device.sm} {
     display: flex;
@@ -89,15 +89,15 @@ const TextBox = styled.div`
   align-items: center;
   height: auto;
   width: 50%;
-  margin-bottom: 90px;
+  margin-bottom: 9vh;
 
   @media ${device.xs} {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 50px;
-    margin-bottom: 0px;
+    margin: 5vh;
+    margin-bottom: 0vh;
   }
 `
 const Desc = styled.p`
@@ -106,7 +106,7 @@ const Desc = styled.p`
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
-  padding: 5px;
+  padding: .5vh;
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

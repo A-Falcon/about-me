@@ -33,15 +33,15 @@ const Wrapper = styled.div`
   z-index: -1; 
 
   @media ${device.xs} {
-    margin-top: -200px;
-    padding-bottom: 80px;
+    margin-top: -20vh;
+    padding-bottom: 8vh;
   }
 `
 
 const HeroText = styled.h1`
   color: ${(props) => props.theme.colors.blood};
   text-align: center;
-  font-size: ${(props) => props.theme.font.fontSize * 15}px; 
+  font-size: ${(props) => props.theme.font.fontSize * .5}rem; 
   text-transform: uppercase;
   font-family: ${(props) => props.theme.font.fontFam};
   transform: scale(1,3);

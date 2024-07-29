@@ -28,7 +28,7 @@ const About: React.FC = () => {
 
 const HomeLink = styled.div`
   width: 100%;
-  height: 5px;
+  height: .5vh;
 `
 
 const Wrapper = styled.div`
@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 
 @media ${device.xs} {
-  padding-bottom: 80px;
+  padding-bottom: 8vh;
 }
 `
 

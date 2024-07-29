@@ -37,10 +37,10 @@ const List = styled.ul`
   flex-direction:column;
   justify-content: space-evenly;
   
-  margin: 0px;
+  margin: 0vh;
   
   position: relative;
-  bottom: 90px;
+  bottom: 9vh;
   /* margin: 10px;
   margin-left: -10px; */
  
@@ -73,7 +73,7 @@ const ImgCont = styled.div`
   /* margin-top: -200px; */
   display: flex;
   flex-direction: row;
-  margin-right: 100px;
+  margin-right: 10vh;
   justify-content:flex-end;
   align-items: center;
   transform:  scale(1);
@@ -83,7 +83,7 @@ const ImgCont = styled.div`
 
 const Img = styled.img`
   position: absolute;
-  width: 300px;
+  width: 30vw;
   border-radius: 10%;
   background-color: ${(props) => props.theme.colors.dark};
   box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);

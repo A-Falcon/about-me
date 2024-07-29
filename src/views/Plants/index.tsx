@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   background-color: ${(props) => props.theme.colors.black};
 
   @media ${device.xs} {
-    padding-bottom: 80px; 
+    padding-bottom: 8vh; 
   }
 
   @media ${device.sm} {
@@ -51,23 +51,23 @@ const Content = styled.div`
   justify-content: space-between;
   min-height: 50vh;
   width: auto;
-  padding: 50px;
-  margin-top: -200px;
+  padding: 5vh;
+  margin-top: -20vh;
 
   @media ${device.xs} {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0px;
-    margin: 20px;
-    margin-bottom: 0px;
+    padding: 0vh;
+    margin: 2vh;
+    margin-bottom: 0vh;
   }
   @media ${device.sm} {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top:0px;
+    margin-top:0vh;
   }
 `
 const TextBox = styled.div`
@@ -83,11 +83,11 @@ const TextBox = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 50px;
-    margin-bottom: 0px;
+    margin: 5vh;
+    margin-bottom: 0vh;
   }
   @media ${device.sm} {
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
   }
 `
 const Desc = styled.p`
@@ -96,7 +96,7 @@ const Desc = styled.p`
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
-  padding: 5px;
+  padding: .5vh, .5vw;
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
   }

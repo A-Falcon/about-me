@@ -100,7 +100,7 @@ const TextBox = styled.div`
     align-items: center;
     height:auto;
     width: auto;
-    margin-top: 50px;
+    margin-top: 5vh;
     padding: 0 2rem;
   }
 `

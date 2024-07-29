@@ -21,13 +21,13 @@ const Wrapper = styled.div`
   /* width: auto; */
   background-color: transparent;
   margin-top: 20vh;
-  margin-bottom: -175px;
+  margin-bottom: -2.2vh;
   
   @media ${device.xs} {
     height: 40vh;
     margin-top: 25vh;
-    margin-bottom: -100px;
-    padding-bottom: 80px;
+    margin-bottom: -10vh;
+    padding-bottom: 8vh;
   }
 `
 

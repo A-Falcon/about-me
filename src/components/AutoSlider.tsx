@@ -63,18 +63,18 @@ const Slideshow: React.FC = () => {
 const SlideShow = styled.div`
   margin: 0 auto;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 25vw;
   
   
   @media ${device.xs} {
-    margin-top: 0px;
-    max-width: 300px;
-    height: 0px;
-    padding-bottom: 400px;
+    margin-top: 0vh;
+    max-width: 15.5vw;
+    height: 0vh;
+    padding-bottom: 40vh;
   }
   @media ${device.sm} { 
-    margin-top: 0px;
-    max-width:500px;
+    margin-top: 0vh;
+    max-width:25vw;
     
   }
 
@@ -84,13 +84,13 @@ const SlideShowSlider = styled.div`
   white-space: nowrap;
   transition: ease 1000ms;
   @media ${device.xs} {
-    max-width: 300px;
+    max-width: 15.5vw;
     height: auto;
-    padding-bottom: 10px;
+    padding-bottom: 10vh;
   }
   @media ${device.sm} {
     max-width: auto;
-    height: 500px;
+    height: 50vh;
   }
 `
 // const ElemName = styled.div`
@@ -101,17 +101,17 @@ const SlideShowSlider = styled.div`
 // `
  const Slide = styled.img`
   display: inline-block;
-  height: 500px;
+  height: 50vh;
   
   width: 100%;
   border-radius: 40px;
   
   @media ${device.xs} {
-    max-height: 300px;
+    max-height: 30vh;
     width: auto;
   }
   @media ${device.sm} {
-    height: 500px;
+    height: 50vh;
     width: auto;
   }
 
@@ -127,11 +127,11 @@ const SlideShowDots = styled.div`
 
  const Dot =  styled.div` 
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 2vh;
+  width: 1.05vw;
   border-radius: 50%;
   cursor: pointer;
-  margin: 15px 7px 0px;
+  margin: 1.5vh .7vh 0vh;
 
   background-color: #c4c4c4;
 `

@@ -67,7 +67,7 @@ const Content = styled.div`
   width: 100%;
   min-height: 50vh;
   height: auto;
-  margin-top: -150px;
+  margin-top: -15vh;
 
     @media ${device.sm} {
     display: flex;
@@ -76,7 +76,7 @@ const Content = styled.div`
     align-items: center;
     min-height: 100vh;
     height: auto;
-    margin-top: 0px;
+    margin-top: 0vh;
   }
 `
 const BoxOfCards = styled.div`
@@ -100,10 +100,10 @@ const TextBox = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 20vh;
   width: auto;
-  padding-top: 0px;
-  padding: 50px;
+  padding-top: 0vh;
+  padding: 5vh;
 
   @media ${device.xs} {
     flex-direction: column;
@@ -111,8 +111,8 @@ const TextBox = styled.div`
     align-items: center;
     height:auto;
     width: auto;
-    padding-top: 0px;
-    padding: 20px;
+    padding-top: 0vh;
+    padding: 2vh;
   }
 `
 
@@ -122,12 +122,12 @@ const Desc = styled.p`
   font-family: ${(props) => props.theme.font.fontFam};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
-  padding-top: 0px;
-  padding: 20px;
+  padding-top: 0vh;
+  padding: 2vh;
   
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize}px;
-    padding:5px;
+    padding:.5vh;
   }
 `
 

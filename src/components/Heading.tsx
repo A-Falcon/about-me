@@ -18,14 +18,21 @@ const Heading: React.FC<HeadingProps>= ({label, id}) => {
 
 
 const Wrapper = styled.div`
-  padding: 50px;
+  padding: 5vh;
   
   @media ${device.xs} {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:10px;
+    padding:1vh;
   }
+
+   @media ${device.sm} {
+    display: flex;
+    justify-content: flex-start;
+    padding:6vh;
+  }
+
 `
 
 const Text = styled.p`
@@ -35,12 +42,12 @@ const Text = styled.p`
   font-weight: ${(props) => props.theme.font.fontWeight * 2};
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 2}px;
-    padding: 10px;
-    margin:50px;
+    padding: 1vh;
+    margin:5vh;
     
   }
   @media ${device.sm} {
-    margin-bottom: -10px;
+    margin-bottom: -1vh;
   }
 
 
