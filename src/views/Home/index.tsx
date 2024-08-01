@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 const HeroText = styled.h1`
   color: ${(props) => props.theme.colors.blood};
   text-align: center;
-  font-size: ${(props) => props.theme.font.fontSize * .5}rem; 
+  font-size: ${(props) => props.theme.font.fontSize}rem; 
   text-transform: uppercase;
   font-family: ${(props) => props.theme.font.fontFam};
   transform: scale(1,3);
@@ -52,6 +52,10 @@ const HeroText = styled.h1`
 
   @media ${device.xs} {
     font-size: ${(props) => props.theme.font.fontSize * 4}px; 
+  }
+
+  @media ${device.sm} {
+    font-size: ${(props) => props.theme.font.fontSize * 8}px
   }
 `
 

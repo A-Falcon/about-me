@@ -79,11 +79,7 @@ const SlideShow = styled.div`
     height: 0px;
     padding-bottom: 400px;
   }
-  @media ${device.sm} { 
-    margin-top: 0px;
-    /* max-width:500px; */
-    
-  }
+
 
 `
 
@@ -99,11 +95,7 @@ const SlideShowSlider = styled.div`
     height: auto;
     padding-bottom: 10px;
   }
-  @media ${device.sm} {
-    max-width: auto;
-    height: 500px;
-    background-color: red;
-  }
+
 `
 // const ElemName = styled.div`
 
@@ -122,11 +114,7 @@ const SlideShowSlider = styled.div`
     max-height: 300px;
     width: auto;
   }
-  @media ${device.sm} {
-    max-height: 300px;
-    width: 300px;
-  }
-
+ 
 
 `
 
