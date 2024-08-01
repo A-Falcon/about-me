@@ -21,7 +21,7 @@ const ThriftingView: React.FC = () => {
          <ImgSlider /> 
           <TextBox>
               <Desc> 
-                Above are some of my finds that have been my gateway to sustainable fashion. 
+                Here are some of my finds that have been my gateway to sustainable fashion. 
               </Desc>
               <Desc>
                 Shopping second-hand is a great way to repurpose and reduce waste in the landfill.
@@ -103,7 +103,7 @@ const TextBox = styled.div`
 const Desc = styled.p`
   line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  font-family: ${(props) => props.theme.font.fontFam};
+  font-family: ${(props) => props.theme.font.fontFamBold};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
   padding: .5vh;

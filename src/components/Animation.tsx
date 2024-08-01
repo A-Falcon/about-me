@@ -49,7 +49,7 @@ const Item = styled.li`
   flex-direction: row;
   font-size: ${(props) => props.theme.font.fontSize * 2}px;
   color: ${(props) => props.theme.colors.text};
-  font-family: ${(props) => props.theme.font.fontFam};
+  font-family: ${(props) => props.theme.font.fontFamBold};
   transition: 200ms;
   
   &:hover {

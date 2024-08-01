@@ -7,7 +7,7 @@ import Card from '../../components/Card'
 const PortraitView: React.FC = () => {
   return (
     <Wrapper>
-      <Card img={require('../../assets/Cars/car.png')}/>
+      <Card img={require('../../assets/Cars/car.png')} />
     </Wrapper>
   )
 }
@@ -29,6 +29,7 @@ const Wrapper = styled.div`
     margin-bottom: -10vh;
     padding-bottom: 8vh;
   }
+
 `
 
 export default PortraitView

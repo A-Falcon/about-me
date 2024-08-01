@@ -19,7 +19,7 @@ const HikingView: React.FC = () => {
       <Content>
         { screenType === 'xs' 
         ? <>
-            <Card img={require('../../assets/Hiking/canyon-me.png')} style={styles.cardXs}/>
+            <Card img={require('../../assets/Hiking/mask.png')} style={styles.cardXs}/>
             <TextBox>
           <Desc>
             Below are some hiking trails I've been on recently.
@@ -31,7 +31,7 @@ const HikingView: React.FC = () => {
           </>
         : 
         <>
-          <Card  img={require('../../assets/Hiking/canyon-me.png')} style={styles.cardXLg}/>   
+          <Card  img={require('../../assets/Hiking/mask.png')} style={styles.cardXLg}/>   
           <TextBox>
             <Desc>
             Below are some hiking trails I've been on recently.
@@ -52,7 +52,7 @@ const HikingView: React.FC = () => {
 const styles = {
   cardXLg: {
     height: 'auto',
-    width: '80%',
+    width: '50%',
   },
   cardXs: {
     display: 'flex',
@@ -107,7 +107,7 @@ const TextBox = styled.div`
 const Desc = styled.p`
   line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  font-family: ${(props) => props.theme.font.fontFam}; 
+  font-family: ${(props) => props.theme.font.fontFamBold}; 
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
   @media ${device.xs} {

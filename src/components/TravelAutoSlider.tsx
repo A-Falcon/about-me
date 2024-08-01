@@ -102,6 +102,7 @@ const SlideShowSlider = styled.div`
   @media ${device.sm} {
     max-width: auto;
     height: 500px;
+    background-color: red;
   }
 `
 // const ElemName = styled.div`
@@ -122,7 +123,7 @@ const SlideShowSlider = styled.div`
     width: auto;
   }
   @media ${device.sm} {
-    height: auto;
+    max-height: 300px;
     width: 300px;
   }
 

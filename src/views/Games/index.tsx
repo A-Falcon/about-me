@@ -72,7 +72,7 @@ const Content = styled.div`
     @media ${device.sm} {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     height: auto;
@@ -102,7 +102,7 @@ const TextBox = styled.div`
   align-items: center;
   height: 20vh;
   width: auto;
-  padding-top: 0vh;
+  padding-bottom: 0vh;
   padding: 5vh;
 
   @media ${device.xs} {
@@ -119,7 +119,7 @@ const TextBox = styled.div`
 const Desc = styled.p`
   line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  font-family: ${(props) => props.theme.font.fontFam};
+  font-family: ${(props) => props.theme.font.fontFamBold};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
   padding-top: 0vh;

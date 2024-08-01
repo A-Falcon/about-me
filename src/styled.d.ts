@@ -18,6 +18,7 @@ declare module 'styled-components' {
       fontFamBold: string
       fontSize: number
       fontWeight: number
+      fontLabel: number
     }
   }
 }

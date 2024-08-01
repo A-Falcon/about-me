@@ -17,7 +17,8 @@ const theme = {
     fontFam: 'Serif',
     fontFamBold: 'Sans-Serif',
     fontSize: 22,
-    fontWeight: 400
+    fontWeight: 400,
+    fontLabel: 800
   }
  
 }

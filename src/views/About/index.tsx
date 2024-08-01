@@ -78,7 +78,7 @@ const Content = styled.div`
 const Desc = styled.p`
   line-height: 2;
   font-size: ${(props) => props.theme.font.fontSize}px;
-  font-family: ${(props) => props.theme.font.fontFam};
+  font-family: ${(props) => props.theme.font.fontFamBold};
   font-weight: ${(props) => props.theme.font.fontWeight};
   color: ${(props) => props.theme.colors.text};
   padding: 20px;

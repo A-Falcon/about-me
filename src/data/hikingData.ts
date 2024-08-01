@@ -7,27 +7,32 @@ export type HikingData = {
 export const hikingData = [
   {
     id: 'p1',
-    name: 'Red Rock Canyon Rocks',
-    img: require('../assets/Hiking/rocks.png')
+    name: 'Mt Kurama, Kyoto',
+    img: require('../assets/Hiking/kuramatree.png')
   },
   {
     id: 'p2',
-    name: 'Red Rock Canyon',
-    img: require('../assets/Hiking/canyon-overview.png')
+    name: 'Corbett, Oregon',
+    img: require('../assets/Hiking/bridge.png')
   },
   {
     id: 'p3',
-    name: 'Red Rock Canyon Face',
-    img: require('../assets/Hiking/face.png')
+    name: 'Corbett, Oregon',
+    img: require('../assets/Hiking/waterfall.png')
   },
   {
     id: 'p4',
-    name: 'Mount Charleston',
-    img: require('../assets/Hiking/forest.png')
+    name: 'Corbett, Oregon',
+    img: require('../assets/Hiking/mushroom.png')
   },
   {
     id: 'p5',
-    name: 'Mount Charleston Pose',
-    img: require('../assets/Hiking/forest-me.png')
-  }
+    name: 'Seqouia National Park',
+    img: require('../assets/Hiking/sequoias.png')
+  },
+  {
+    id: 'p6',
+    name: 'Red Rock Canyon',
+    img: require('../assets/Hiking/face.png')
+  },
 ] 
